@@ -10,8 +10,8 @@ export default defineEventHandler(async (event) => {
       const body = await readBody(event);
       const nuevoCarritoProducto = await prisma.carritoProducto.create({
         data: {
-          carrito_id: body.carrito_id,
-          producto_id: body.producto_id,
+          carrito_id: Number(body.carrito_id),
+          producto_id: Number(body.producto_id),
           cantidad: body.cantidad,
         },
       });
@@ -21,9 +21,20 @@ export default defineEventHandler(async (event) => {
       return { error: error.message };
     }
   } else if (req.method === 'GET') {
+    const { carrito_id, producto_id } = getQuery(event);
     try {
-      const carritoProductos = await prisma.carritoProducto.findMany();
-      return carritoProductos;
+      const carritoProducto = await prisma.carritoProducto.findFirst({
+        where: {
+          carrito_id: Number(carrito_id),
+          producto_id: Number(producto_id)
+        }
+      });
+      if (carritoProducto) {
+        return carritoProducto;
+      } else {
+        res.statusCode = 404;
+        return { error: 'Producto no encontrado en el carrito' };
+      }
     } catch (error) {
       res.statusCode = 500;
       return { error: error.message };
@@ -32,10 +43,8 @@ export default defineEventHandler(async (event) => {
     try {
       const body = await readBody(event);
       const carritoProductoActualizado = await prisma.carritoProducto.update({
-        where: { id: body.id },
+        where: { id: Number(body.id) },
         data: {
-          carrito_id: body.carrito_id,
-          producto_id: body.producto_id,
           cantidad: body.cantidad,
         },
       });
@@ -48,7 +57,7 @@ export default defineEventHandler(async (event) => {
     try {
       const body = await readBody(event);
       const carritoProductoEliminado = await prisma.carritoProducto.delete({
-        where: { id: body.id },
+        where: { id: Number(body.id) },
       });
       return carritoProductoEliminado;
     } catch (error) {
