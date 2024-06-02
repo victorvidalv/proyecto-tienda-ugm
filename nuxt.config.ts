@@ -1,4 +1,4 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// nuxt.config.ts
 export default defineNuxtConfig({
   devtools: { enabled: true },
   plugins: [
@@ -9,7 +9,12 @@ export default defineNuxtConfig({
     port: 3000
   },
   modules: [
-  
-]
- 
+    '@nuxtjs/tailwindcss',
+  ],
+  buildModules: [
+    "@nuxtjs/axios"
+  ],
+  axios: {
+    baseURL: '/',
+  },
 })
