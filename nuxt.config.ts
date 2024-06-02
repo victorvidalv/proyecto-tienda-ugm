@@ -11,10 +11,5 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
   ],
-  buildModules: [
-    "@nuxtjs/axios"
-  ],
-  axios: {
-    baseURL: '/',
-  },
+
 })
