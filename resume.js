@@ -161,4 +161,4 @@ const result = {
 };
 
 // Guardar resultado en un archivo
-fs.writeFileSync('files_details.txt', JSON.stringify(result, null, 4), 'utf-8');
+fs.writeFileSync('dist/files_details.json', JSON.stringify(result, null, 4), 'utf-8');
