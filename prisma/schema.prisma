@@ -1,0 +1,67 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Usuario {
+  id             Int       @id @default(autoincrement())
+  nombre         String
+  email          String    @unique
+  rut            String?    @unique
+  contrasena     String
+  tipo           String    @default("cliente")  // Valor por defecto
+  direccion      String?
+  telefono       String?
+  fecha_creacion DateTime  @default(now())
+  Carrito        Carrito[]
+}
+
+model Producto {
+  id              Int       @id @default(autoincrement())
+  nombre          String
+  descripcion     String
+  imagen_url      String
+  precio          Int
+  stock           Int
+  categoria_id    Int
+  Categoria       Categoria @relation(fields: [categoria_id], references: [id])
+  CarritoProducto CarritoProducto[]
+}
+
+model Carrito {
+  id              Int              @id @default(autoincrement())
+  usuario_id      Int             
+  fecha_creacion  DateTime         @default(now())
+  estado          String
+  Usuario         Usuario          @relation(fields: [usuario_id], references: [id])
+  CarritoProducto CarritoProducto[]
+  Pago            Pago?
+}
+
+model CarritoProducto {
+  id             Int      @id @default(autoincrement())
+  carrito_id     Int
+  producto_id    Int
+  cantidad       Int
+  Carrito        Carrito  @relation(fields: [carrito_id], references: [id])
+  Producto       Producto @relation(fields: [producto_id], references: [id])
+}
+
+model Pago {
+  id            Int      @id @default(autoincrement())
+  carrito_id    Int      @unique
+  fecha_pago    DateTime
+  monto         Int
+  metodo_pago   String
+  Carrito       Carrito  @relation(fields: [carrito_id], references: [id])
+}
+
+model Categoria {
+  id            Int       @id @default(autoincrement())
+  nombre        String
+  Producto      Producto[]
+}

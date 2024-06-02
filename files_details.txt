@@ -1,0 +1,316 @@
+{
+    "thisinfo": {
+        "whatis": "Contains all files and subdirectories of a project, excluding specified directories and files",
+        "howto": "directoryStructure: an object containing the directory and file structure, others: contains the excluded directories and files, fileDetails: contains the details (content) of the files"
+    },
+    "directoryStructure": {
+        "path": "/Users/vmvv/work/tiendaonline",
+        "subdirectories": [
+            {
+                "path": "/Users/vmvv/work/tiendaonline/pages",
+                "subdirectories": [],
+                "files": [
+                    {
+                        "path": "/Users/vmvv/work/tiendaonline/pages/crearusuario.vue",
+                        "content": "",
+                        "isBinary": false
+                    }
+                ]
+            },
+            {
+                "path": "/Users/vmvv/work/tiendaonline/plugins",
+                "subdirectories": [],
+                "files": [
+                    {
+                        "path": "/Users/vmvv/work/tiendaonline/plugins/prisma.server.js",
+                        "content": "",
+                        "isBinary": false
+                    }
+                ]
+            },
+            {
+                "path": "/Users/vmvv/work/tiendaonline/prisma",
+                "subdirectories": [
+                    {
+                        "path": "/Users/vmvv/work/tiendaonline/prisma/migrations",
+                        "subdirectories": [
+                            {
+                                "path": "/Users/vmvv/work/tiendaonline/prisma/migrations/20240601233236_inicial",
+                                "subdirectories": [],
+                                "files": [
+                                    {
+                                        "path": "/Users/vmvv/work/tiendaonline/prisma/migrations/20240601233236_inicial/migration.sql",
+                                        "content": "",
+                                        "isBinary": false
+                                    }
+                                ]
+                            },
+                            {
+                                "path": "/Users/vmvv/work/tiendaonline/prisma/migrations/20240602000719_add_default_value_to_tipo",
+                                "subdirectories": [],
+                                "files": [
+                                    {
+                                        "path": "/Users/vmvv/work/tiendaonline/prisma/migrations/20240602000719_add_default_value_to_tipo/migration.sql",
+                                        "content": "",
+                                        "isBinary": false
+                                    }
+                                ]
+                            },
+                            {
+                                "path": "/Users/vmvv/work/tiendaonline/prisma/migrations/20240602013026_remove_precio_unitario_from_carritoproducto",
+                                "subdirectories": [],
+                                "files": [
+                                    {
+                                        "path": "/Users/vmvv/work/tiendaonline/prisma/migrations/20240602013026_remove_precio_unitario_from_carritoproducto/migration.sql",
+                                        "content": "",
+                                        "isBinary": false
+                                    }
+                                ]
+                            },
+                            {
+                                "path": "/Users/vmvv/work/tiendaonline/prisma/migrations/20240602013653_allow_multiple_carts_per_user",
+                                "subdirectories": [],
+                                "files": [
+                                    {
+                                        "path": "/Users/vmvv/work/tiendaonline/prisma/migrations/20240602013653_allow_multiple_carts_per_user/migration.sql",
+                                        "content": "",
+                                        "isBinary": false
+                                    }
+                                ]
+                            }
+                        ],
+                        "files": [
+                            {
+                                "path": "/Users/vmvv/work/tiendaonline/prisma/migrations/migration_lock.toml",
+                                "content": "",
+                                "isBinary": false
+                            }
+                        ]
+                    }
+                ],
+                "files": [
+                    {
+                        "path": "/Users/vmvv/work/tiendaonline/prisma/schema.prisma",
+                        "content": "",
+                        "isBinary": false
+                    }
+                ]
+            },
+            {
+                "path": "/Users/vmvv/work/tiendaonline/public",
+                "subdirectories": [],
+                "files": []
+            },
+            {
+                "path": "/Users/vmvv/work/tiendaonline/server",
+                "subdirectories": [
+                    {
+                        "path": "/Users/vmvv/work/tiendaonline/server/api",
+                        "subdirectories": [],
+                        "files": [
+                            {
+                                "path": "/Users/vmvv/work/tiendaonline/server/api/carrito.js",
+                                "content": "",
+                                "isBinary": false
+                            },
+                            {
+                                "path": "/Users/vmvv/work/tiendaonline/server/api/carritoproducto.js",
+                                "content": "",
+                                "isBinary": false
+                            },
+                            {
+                                "path": "/Users/vmvv/work/tiendaonline/server/api/categoria.js",
+                                "content": "",
+                                "isBinary": false
+                            },
+                            {
+                                "path": "/Users/vmvv/work/tiendaonline/server/api/compra.js",
+                                "content": "",
+                                "isBinary": false
+                            },
+                            {
+                                "path": "/Users/vmvv/work/tiendaonline/server/api/pago.js",
+                                "content": "",
+                                "isBinary": false
+                            },
+                            {
+                                "path": "/Users/vmvv/work/tiendaonline/server/api/producto.js",
+                                "content": "",
+                                "isBinary": false
+                            },
+                            {
+                                "path": "/Users/vmvv/work/tiendaonline/server/api/usuario.js",
+                                "content": "",
+                                "isBinary": false
+                            }
+                        ]
+                    }
+                ],
+                "files": [
+                    {
+                        "path": "/Users/vmvv/work/tiendaonline/server/tsconfig.json",
+                        "content": "",
+                        "isBinary": false
+                    }
+                ]
+            }
+        ],
+        "files": [
+            {
+                "path": "/Users/vmvv/work/tiendaonline/.env",
+                "content": "",
+                "isBinary": false
+            },
+            {
+                "path": "/Users/vmvv/work/tiendaonline/.gitignore",
+                "content": "",
+                "isBinary": false
+            },
+            {
+                "path": "/Users/vmvv/work/tiendaonline/README.md",
+                "content": "",
+                "isBinary": false
+            },
+            {
+                "path": "/Users/vmvv/work/tiendaonline/nuxt.config.ts",
+                "content": "",
+                "isBinary": false
+            },
+            {
+                "path": "/Users/vmvv/work/tiendaonline/package.json",
+                "content": "",
+                "isBinary": false
+            },
+            {
+                "path": "/Users/vmvv/work/tiendaonline/tsconfig.json",
+                "content": "",
+                "isBinary": false
+            }
+        ]
+    },
+    "others": {
+        "directories": [
+            "/Users/vmvv/work/tiendaonline/.nuxt",
+            "/Users/vmvv/work/tiendaonline/node_modules"
+        ],
+        "files": [
+            "/Users/vmvv/work/tiendaonline/files_details.txt",
+            "/Users/vmvv/work/tiendaonline/package-lock.json",
+            "/Users/vmvv/work/tiendaonline/prisma/dev.db",
+            "/Users/vmvv/work/tiendaonline/public/favicon.ico",
+            "/Users/vmvv/work/tiendaonline/resume.js"
+        ]
+    },
+    "fileDetails": [
+        {
+            "path": "/Users/vmvv/work/tiendaonline/.env",
+            "content": "<contenidoarchivo>EXCLUDE_DIRS=node_modules,.nuxt\nEXCLUDE_FILES=package-lock.json,dev.db,dev.db-journal,favicon.ico,.DS_Store,files_details.txt,files_details.txt,resume.js\nPROJECT_DESCRIPTION=your_project_description_here\n\n# This was inserted by `prisma init`:\n# Environment variables declared in this file are automatically made available to Prisma.\n# See the documentation for more detail: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema\n\n# Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.\n# See the documentation for all the connection string options: https://pris.ly/d/connection-strings\n\nDATABASE_URL=\"file:./dev.db\"</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/.gitignore",
+            "content": "<contenidoarchivo># Nuxt dev/build outputs\n.output\n.data\n.nuxt\n.nitro\n.cache\ndist\n\n# Node dependencies\nnode_modules\n\n# Logs\nlogs\n*.log\n\n# Misc\n.DS_Store\n.fleet\n.idea\n\n# Local env files\n.env\n.env.*\n!.env.example\n</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/README.md",
+            "content": "<contenidoarchivo># Nuxt 3 Minimal Starter\n\nLook at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.\n\n## Setup\n\nMake sure to install the dependencies:\n\n```bash\n# npm\nnpm install\n\n# pnpm\npnpm install\n\n# yarn\nyarn install\n\n# bun\nbun install\n```\n\n## Development Server\n\nStart the development server on `http://localhost:3000`:\n\n```bash\n# npm\nnpm run dev\n\n# pnpm\npnpm run dev\n\n# yarn\nyarn dev\n\n# bun\nbun run dev\n```\n\n## Production\n\nBuild the application for production:\n\n```bash\n# npm\nnpm run build\n\n# pnpm\npnpm run build\n\n# yarn\nyarn build\n\n# bun\nbun run build\n```\n\nLocally preview production build:\n\n```bash\n# npm\nnpm run preview\n\n# pnpm\npnpm run preview\n\n# yarn\nyarn preview\n\n# bun\nbun run preview\n```\n\nCheck out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.\n</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/nuxt.config.ts",
+            "content": "<contenidoarchivo>// https://nuxt.com/docs/api/configuration/nuxt-config\nexport default defineNuxtConfig({\n  devtools: { enabled: true },\n  plugins: [\n     { src: '~/plugins/prisma.server.js', mode: 'server' }\n  ],\n  server: {\n    host: 'localhost',\n    port: 3000\n  },\n  modules: [\n  \n]\n \n})\n</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/package.json",
+            "content": "<contenidoarchivo>{\n  \"name\": \"nuxt-app\",\n  \"private\": true,\n  \"type\": \"module\",\n  \"scripts\": {\n    \"build\": \"nuxt build\",\n    \"dev\": \"nuxt dev\",\n    \"generate\": \"nuxt generate\",\n    \"preview\": \"nuxt preview\",\n    \"postinstall\": \"nuxt prepare\"\n  },\n  \"dependencies\": {\n    \"@prisma/client\": \"^5.14.0\",\n    \"body-parser\": \"^1.20.2\",\n    \"nuxt\": \"^3.11.2\",\n    \"vue\": \"^3.4.27\",\n    \"vue-router\": \"^4.3.2\"\n  },\n  \"devDependencies\": {\n    \"prisma\": \"^5.14.0\"\n  }\n}\n</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/pages/crearusuario.vue",
+            "content": "<contenidoarchivo><template>\n    <div>\n      <h1>Crear Usuario</h1>\n      <form @submit.prevent=\"crearUsuario\">\n        <div>\n          <label for=\"nombre\">Nombre:</label>\n          <input type=\"text\" v-model=\"nombre\" id=\"nombre\" required>\n        </div>\n        <div>\n          <label for=\"email\">Email:</label>\n          <input type=\"email\" v-model=\"email\" id=\"email\" required>\n        </div>\n        <div>\n          <label for=\"contrasena\">Contraseña:</label>\n          <input type=\"password\" v-model=\"contrasena\" id=\"contrasena\" required>\n        </div>\n        <div>\n          <label for=\"direccion\">Dirección:</label>\n          <input type=\"text\" v-model=\"direccion\" id=\"direccion\">\n        </div>\n        <div>\n          <label for=\"telefono\">Teléfono:</label>\n          <input type=\"text\" v-model=\"telefono\" id=\"telefono\">\n        </div>\n        <button type=\"submit\">Crear Usuario</button>\n      </form>\n    </div>\n  </template>\n  \n  <script>\n  export default {\n    data() {\n      return {\n        nombre: '',\n        email: '',\n        contrasena: '',\n        direccion: '',\n        telefono: ''\n      };\n    },\n    methods: {\n      async crearUsuario() {\n        try {\n          const response = await fetch('/api/usuario', {\n            method: 'POST',\n            headers: {\n              'Content-Type': 'application/json'\n            },\n            body: JSON.stringify({\n              nombre: this.nombre,\n              email: this.email,\n              contrasena: this.contrasena,\n              direccion: this.direccion,\n              telefono: this.telefono\n            })\n          });\n          if (response.ok) {\n            alert('Usuario creado exitosamente');\n            // Limpiar el formulario\n            this.nombre = '';\n            this.email = '';\n            this.contrasena = '';\n            this.direccion = '';\n            this.telefono = '';\n          } else {\n            throw new Error('Error al crear el usuario');\n          }\n        } catch (error) {\n          alert(error.message);\n        }\n      }\n    }\n  };\n  </script>\n  \n  <style scoped>\n  form {\n    display: flex;\n    flex-direction: column;\n    max-width: 300px;\n    margin: auto;\n  }\n  \n  div {\n    margin-bottom: 10px;\n  }\n  </style></contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/plugins/prisma.server.js",
+            "content": "<contenidoarchivo>// plugins/prisma.server.js\nimport { PrismaClient } from '@prisma/client';\n\nconst prisma = new PrismaClient();\n\nexport default defineNuxtPlugin((nuxtApp) => {\n  nuxtApp.provide('prisma', prisma);\n});\n</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/prisma/migrations/20240601233236_inicial/migration.sql",
+            "content": "<contenidoarchivo>-- CreateTable\nCREATE TABLE \"Usuario\" (\n    \"id\" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,\n    \"nombre\" TEXT NOT NULL,\n    \"email\" TEXT NOT NULL,\n    \"contrasena\" TEXT NOT NULL,\n    \"tipo\" TEXT NOT NULL,\n    \"direccion\" TEXT,\n    \"telefono\" TEXT,\n    \"fecha_creacion\" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP\n);\n\n-- CreateTable\nCREATE TABLE \"Producto\" (\n    \"id\" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,\n    \"nombre\" TEXT NOT NULL,\n    \"descripcion\" TEXT NOT NULL,\n    \"imagen_url\" TEXT NOT NULL,\n    \"precio\" INTEGER NOT NULL,\n    \"stock\" INTEGER NOT NULL,\n    \"categoria_id\" INTEGER NOT NULL,\n    CONSTRAINT \"Producto_categoria_id_fkey\" FOREIGN KEY (\"categoria_id\") REFERENCES \"Categoria\" (\"id\") ON DELETE RESTRICT ON UPDATE CASCADE\n);\n\n-- CreateTable\nCREATE TABLE \"Carrito\" (\n    \"id\" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,\n    \"usuario_id\" INTEGER NOT NULL,\n    \"fecha_creacion\" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,\n    \"estado\" TEXT NOT NULL,\n    CONSTRAINT \"Carrito_usuario_id_fkey\" FOREIGN KEY (\"usuario_id\") REFERENCES \"Usuario\" (\"id\") ON DELETE RESTRICT ON UPDATE CASCADE\n);\n\n-- CreateTable\nCREATE TABLE \"CarritoProducto\" (\n    \"id\" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,\n    \"carrito_id\" INTEGER NOT NULL,\n    \"producto_id\" INTEGER NOT NULL,\n    \"cantidad\" INTEGER NOT NULL,\n    \"precio_unitario\" INTEGER NOT NULL,\n    CONSTRAINT \"CarritoProducto_carrito_id_fkey\" FOREIGN KEY (\"carrito_id\") REFERENCES \"Carrito\" (\"id\") ON DELETE RESTRICT ON UPDATE CASCADE,\n    CONSTRAINT \"CarritoProducto_producto_id_fkey\" FOREIGN KEY (\"producto_id\") REFERENCES \"Producto\" (\"id\") ON DELETE RESTRICT ON UPDATE CASCADE\n);\n\n-- CreateTable\nCREATE TABLE \"Pago\" (\n    \"id\" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,\n    \"carrito_id\" INTEGER NOT NULL,\n    \"fecha_pago\" DATETIME NOT NULL,\n    \"monto\" INTEGER NOT NULL,\n    \"metodo_pago\" TEXT NOT NULL,\n    CONSTRAINT \"Pago_carrito_id_fkey\" FOREIGN KEY (\"carrito_id\") REFERENCES \"Carrito\" (\"id\") ON DELETE RESTRICT ON UPDATE CASCADE\n);\n\n-- CreateTable\nCREATE TABLE \"Categoria\" (\n    \"id\" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,\n    \"nombre\" TEXT NOT NULL\n);\n\n-- CreateIndex\nCREATE UNIQUE INDEX \"Usuario_email_key\" ON \"Usuario\"(\"email\");\n\n-- CreateIndex\nCREATE UNIQUE INDEX \"Carrito_usuario_id_key\" ON \"Carrito\"(\"usuario_id\");\n\n-- CreateIndex\nCREATE UNIQUE INDEX \"Pago_carrito_id_key\" ON \"Pago\"(\"carrito_id\");\n</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/prisma/migrations/20240602000719_add_default_value_to_tipo/migration.sql",
+            "content": "<contenidoarchivo>-- RedefineTables\nPRAGMA foreign_keys=OFF;\nCREATE TABLE \"new_Usuario\" (\n    \"id\" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,\n    \"nombre\" TEXT NOT NULL,\n    \"email\" TEXT NOT NULL,\n    \"contrasena\" TEXT NOT NULL,\n    \"tipo\" TEXT NOT NULL DEFAULT 'cliente',\n    \"direccion\" TEXT,\n    \"telefono\" TEXT,\n    \"fecha_creacion\" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP\n);\nINSERT INTO \"new_Usuario\" (\"contrasena\", \"direccion\", \"email\", \"fecha_creacion\", \"id\", \"nombre\", \"telefono\", \"tipo\") SELECT \"contrasena\", \"direccion\", \"email\", \"fecha_creacion\", \"id\", \"nombre\", \"telefono\", \"tipo\" FROM \"Usuario\";\nDROP TABLE \"Usuario\";\nALTER TABLE \"new_Usuario\" RENAME TO \"Usuario\";\nCREATE UNIQUE INDEX \"Usuario_email_key\" ON \"Usuario\"(\"email\");\nPRAGMA foreign_key_check(\"Usuario\");\nPRAGMA foreign_keys=ON;\n</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/prisma/migrations/20240602013026_remove_precio_unitario_from_carritoproducto/migration.sql",
+            "content": "<contenidoarchivo>/*\n  Warnings:\n\n  - You are about to drop the column `precio_unitario` on the `CarritoProducto` table. All the data in the column will be lost.\n\n*/\n-- RedefineTables\nPRAGMA foreign_keys=OFF;\nCREATE TABLE \"new_CarritoProducto\" (\n    \"id\" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,\n    \"carrito_id\" INTEGER NOT NULL,\n    \"producto_id\" INTEGER NOT NULL,\n    \"cantidad\" INTEGER NOT NULL,\n    CONSTRAINT \"CarritoProducto_carrito_id_fkey\" FOREIGN KEY (\"carrito_id\") REFERENCES \"Carrito\" (\"id\") ON DELETE RESTRICT ON UPDATE CASCADE,\n    CONSTRAINT \"CarritoProducto_producto_id_fkey\" FOREIGN KEY (\"producto_id\") REFERENCES \"Producto\" (\"id\") ON DELETE RESTRICT ON UPDATE CASCADE\n);\nINSERT INTO \"new_CarritoProducto\" (\"cantidad\", \"carrito_id\", \"id\", \"producto_id\") SELECT \"cantidad\", \"carrito_id\", \"id\", \"producto_id\" FROM \"CarritoProducto\";\nDROP TABLE \"CarritoProducto\";\nALTER TABLE \"new_CarritoProducto\" RENAME TO \"CarritoProducto\";\nPRAGMA foreign_key_check(\"CarritoProducto\");\nPRAGMA foreign_keys=ON;\n</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/prisma/migrations/20240602013653_allow_multiple_carts_per_user/migration.sql",
+            "content": "<contenidoarchivo>-- DropIndex\nDROP INDEX \"Carrito_usuario_id_key\";\n</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/prisma/migrations/migration_lock.toml",
+            "content": "<contenidoarchivo># Please do not edit this file manually\n# It should be added in your version-control system (i.e. Git)\nprovider = \"sqlite\"</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/prisma/schema.prisma",
+            "content": "<contenidoarchivo>datasource db {\n  provider = \"sqlite\"\n  url      = env(\"DATABASE_URL\")\n}\n\ngenerator client {\n  provider = \"prisma-client-js\"\n}\n\nmodel Usuario {\n  id             Int       @id @default(autoincrement())\n  nombre         String\n  email          String    @unique\n  contrasena     String\n  tipo           String    @default(\"cliente\")  // Valor por defecto\n  direccion      String?\n  telefono       String?\n  fecha_creacion DateTime  @default(now())\n  Carrito        Carrito[]\n}\n\nmodel Producto {\n  id              Int       @id @default(autoincrement())\n  nombre          String\n  descripcion     String\n  imagen_url      String\n  precio          Int\n  stock           Int\n  categoria_id    Int\n  Categoria       Categoria @relation(fields: [categoria_id], references: [id])\n  CarritoProducto CarritoProducto[]\n}\n\nmodel Carrito {\n  id              Int              @id @default(autoincrement())\n  usuario_id      Int             \n  fecha_creacion  DateTime         @default(now())\n  estado          String\n  Usuario         Usuario          @relation(fields: [usuario_id], references: [id])\n  CarritoProducto CarritoProducto[]\n  Pago            Pago?\n}\n\nmodel CarritoProducto {\n  id             Int      @id @default(autoincrement())\n  carrito_id     Int\n  producto_id    Int\n  cantidad       Int\n  Carrito        Carrito  @relation(fields: [carrito_id], references: [id])\n  Producto       Producto @relation(fields: [producto_id], references: [id])\n}\n\nmodel Pago {\n  id            Int      @id @default(autoincrement())\n  carrito_id    Int      @unique\n  fecha_pago    DateTime\n  monto         Int\n  metodo_pago   String\n  Carrito       Carrito  @relation(fields: [carrito_id], references: [id])\n}\n\nmodel Categoria {\n  id            Int       @id @default(autoincrement())\n  nombre        String\n  Producto      Producto[]\n}</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/server/api/carrito.js",
+            "content": "<contenidoarchivo>import { PrismaClient } from '@prisma/client';\n\nconst prisma = new PrismaClient();\n\nexport default defineEventHandler(async (event) => {\n  const { req, res } = event;\n\n  if (req.method === 'GET') {\n    try {\n      const carritos = await prisma.carrito.findMany();\n      return carritos;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else if (req.method === 'POST') {\n    try {\n      const body = await readBody(event);\n      const nuevoCarrito = await prisma.carrito.create({\n        data: {\n          usuario_id: body.usuario_id,\n          estado: 'pendiente',\n        },\n      });\n      return nuevoCarrito;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else if (req.method === 'PUT') {\n    try {\n      const body = await readBody(event);\n      const carritoActualizado = await prisma.carrito.update({\n        where: { id: body.id },\n        data: {\n          usuario_id: body.usuario_id,\n          estado: body.estado,\n        },\n      });\n      return carritoActualizado;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else if (req.method === 'DELETE') {\n    try {\n      const body = await readBody(event);\n      const carritoEliminado = await prisma.carrito.delete({\n        where: { id: body.id },\n      });\n      return carritoEliminado;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else {\n    res.statusCode = 405;\n    return { error: 'Método no permitido' };\n  }\n});</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/server/api/carritoproducto.js",
+            "content": "<contenidoarchivo>import { PrismaClient } from '@prisma/client';\n\nconst prisma = new PrismaClient();\n\nexport default defineEventHandler(async (event) => {\n  const { req, res } = event;\n\n  if (req.method === 'POST') {\n    try {\n      const body = await readBody(event);\n      const nuevoCarritoProducto = await prisma.carritoProducto.create({\n        data: {\n          carrito_id: body.carrito_id,\n          producto_id: body.producto_id,\n          cantidad: body.cantidad,\n        },\n      });\n      return nuevoCarritoProducto;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else if (req.method === 'GET') {\n    try {\n      const carritoProductos = await prisma.carritoProducto.findMany();\n      return carritoProductos;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else if (req.method === 'PUT') {\n    try {\n      const body = await readBody(event);\n      const carritoProductoActualizado = await prisma.carritoProducto.update({\n        where: { id: body.id },\n        data: {\n          carrito_id: body.carrito_id,\n          producto_id: body.producto_id,\n          cantidad: body.cantidad,\n        },\n      });\n      return carritoProductoActualizado;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else if (req.method === 'DELETE') {\n    try {\n      const body = await readBody(event);\n      const carritoProductoEliminado = await prisma.carritoProducto.delete({\n        where: { id: body.id },\n      });\n      return carritoProductoEliminado;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else {\n    res.statusCode = 405;\n    return { error: 'Método no permitido' };\n  }\n});</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/server/api/categoria.js",
+            "content": "<contenidoarchivo>import { PrismaClient } from '@prisma/client';\n\nconst prisma = new PrismaClient();\n\nexport default defineEventHandler(async (event) => {\n  const { req, res } = event;\n\n  if (req.method === 'GET') {\n    try {\n      const categorias = await prisma.categoria.findMany();\n      return categorias;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else if (req.method === 'POST') {\n    try {\n      const body = await readBody(event);\n      const nuevaCategoria = await prisma.categoria.create({\n        data: {\n          nombre: body.nombre,\n        },\n      });\n      return nuevaCategoria;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else if (req.method === 'PUT') {\n    try {\n      const body = await readBody(event);\n      const categoriaActualizada = await prisma.categoria.update({\n        where: { id: body.id },\n        data: {\n          nombre: body.nombre,\n        },\n      });\n      return categoriaActualizada;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else if (req.method === 'DELETE') {\n    try {\n      const body = await readBody(event);\n      const categoriaEliminada = await prisma.categoria.delete({\n        where: { id: body.id },\n      });\n      return categoriaEliminada;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else {\n    res.statusCode = 405;\n    return { error: 'Método no permitido' };\n  }\n});</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/server/api/compra.js",
+            "content": "<contenidoarchivo>import { PrismaClient } from '@prisma/client';\n\nconst prisma = new PrismaClient();\n\nexport default defineEventHandler(async (event) => {\n  const { req, res } = event;\n\n  if (req.method === 'GET') {\n    const { usuario_id, carrito_id } = getQuery(event);\n\n    if (!usuario_id || !carrito_id) {\n      res.statusCode = 400;\n      return { error: 'Debe proporcionar usuario_id y carrito_id' };\n    }\n\n    try {\n      const usuario = await prisma.usuario.findUnique({\n        where: { id: Number(usuario_id) },\n      });\n\n      if (!usuario) {\n        res.statusCode = 404;\n        return { error: 'Usuario no encontrado' };\n      }\n\n      const carrito = await prisma.carrito.findUnique({\n        where: { id: Number(carrito_id) },\n        include: {\n          CarritoProducto: {\n            include: {\n              Producto: true,\n            },\n          },\n        },\n      });\n\n      if (!carrito || carrito.usuario_id !== Number(usuario_id)) {\n        res.statusCode = 404;\n        return { error: 'Carrito no encontrado o no pertenece al usuario' };\n      }\n\n      const productos = carrito.CarritoProducto.map(item => ({\n        id: item.Producto.id,\n        nombre: item.Producto.nombre,\n        cantidad: item.cantidad,\n        precio_unitario: item.Producto.precio,\n        valor: item.cantidad * item.Producto.precio,\n      }));\n\n      const total = productos.reduce((acc, item) => acc + item.valor, 0);\n\n      return {\n        usuario: {\n          id: usuario.id,\n          nombre: usuario.nombre,\n          email: usuario.email,\n        },\n        carrito: {\n          id: carrito.id,\n          estado: carrito.estado,\n        },\n        productos,\n        total,\n      };\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else {\n    res.statusCode = 405;\n    return { error: 'Método no permitido' };\n  }\n});</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/server/api/pago.js",
+            "content": "<contenidoarchivo>import { PrismaClient } from '@prisma/client';\n\nconst prisma = new PrismaClient();\n\nexport default defineEventHandler(async (event) => {\n  const { req, res } = event;\n\n  if (req.method === 'POST') {\n    const { carrito_id } = await readBody(event);\n\n    if (!carrito_id) {\n      res.statusCode = 400;\n      return { error: 'Debe proporcionar el ID del carrito' };\n    }\n\n    try {\n      // Encuentra el carrito y sus productos\n      const carrito = await prisma.carrito.findUnique({\n        where: { id: Number(carrito_id) },\n        include: {\n          CarritoProducto: {\n            include: {\n              Producto: true,\n            },\n          },\n        },\n      });\n\n      if (!carrito) {\n        res.statusCode = 404;\n        return { error: 'Carrito no encontrado' };\n      }\n\n      // Actualiza el estado del carrito a \"pagado\"\n      await prisma.carrito.update({\n        where: { id: Number(carrito_id) },\n        data: { estado: 'pagado' },\n      });\n\n      // Actualiza el stock de los productos\n      const updateStockPromises = carrito.CarritoProducto.map(async (item) => {\n        return prisma.producto.update({\n          where: { id: item.producto_id },\n          data: {\n            stock: {\n              decrement: item.cantidad,\n            },\n          },\n        });\n      });\n\n      await Promise.all(updateStockPromises);\n\n      return { message: 'Pago realizado y stock actualizado correctamente' };\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else {\n    res.statusCode = 405;\n    return { error: 'Método no permitido' };\n  }\n});</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/server/api/producto.js",
+            "content": "<contenidoarchivo>import { PrismaClient } from '@prisma/client';\n\nconst prisma = new PrismaClient();\n\nexport default defineEventHandler(async (event) => {\n  const { req, res } = event;\n\n  if (req.method === 'GET') {\n    try {\n      const productos = await prisma.producto.findMany();\n      return productos;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else if (req.method === 'POST') {\n    try {\n      const body = await readBody(event);\n      const nuevoProducto = await prisma.producto.create({\n        data: {\n          nombre: body.nombre,\n          descripcion: body.descripcion,\n          imagen_url: body.imagen_url,\n          precio: body.precio,\n          stock: body.stock,\n          categoria_id: body.categoria_id,\n        },\n      });\n      return nuevoProducto;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else if (req.method === 'PUT') {\n    try {\n      const body = await readBody(event);\n      const productoActualizado = await prisma.producto.update({\n        where: { id: body.id },\n        data: {\n          nombre: body.nombre,\n          descripcion: body.descripcion,\n          imagen_url: body.imagen_url,\n          precio: body.precio,\n          stock: body.stock,\n          categoria_id: body.categoria_id,\n        },\n      });\n      return productoActualizado;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else if (req.method === 'DELETE') {\n    try {\n      const body = await readBody(event);\n      const productoEliminado = await prisma.producto.delete({\n        where: { id: body.id },\n      });\n      return productoEliminado;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else {\n    res.statusCode = 405;\n    return { error: 'Método no permitido' };\n  }\n});</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/server/api/usuario.js",
+            "content": "<contenidoarchivo>import { PrismaClient } from '@prisma/client';\n\nconst prisma = new PrismaClient();\n\nexport default defineEventHandler(async (event) => {\n  const { req, res } = event;\n\n  if (req.method === 'GET') {\n    try {\n      const usuarios = await prisma.usuario.findMany();\n      return usuarios;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else if (req.method === 'POST') {\n    try {\n      const body = await readBody(event);\n      const nuevoUsuario = await prisma.usuario.create({\n        data: {\n          nombre: body.nombre,\n          email: body.email,\n          contrasena: body.contrasena,\n          tipo: 'cliente',\n          direccion: body.direccion,\n          telefono: body.telefono,\n        },\n      });\n      return nuevoUsuario;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else if (req.method === 'PUT') {\n    try {\n      const body = await readBody(event);\n      const usuarioActualizado = await prisma.usuario.update({\n        where: { id: body.id },\n        data: {\n          nombre: body.nombre,\n          email: body.email,\n          contrasena: body.contrasena,\n          tipo: body.tipo,\n          direccion: body.direccion,\n          telefono: body.telefono,\n        },\n      });\n      return usuarioActualizado;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else if (req.method === 'DELETE') {\n    try {\n      const body = await readBody(event);\n      const usuarioEliminado = await prisma.usuario.delete({\n        where: { id: body.id },\n      });\n      return usuarioEliminado;\n    } catch (error) {\n      res.statusCode = 500;\n      return { error: error.message };\n    }\n  } else {\n    res.statusCode = 405;\n    return { error: 'Método no permitido' };\n  }\n});</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/server/tsconfig.json",
+            "content": "<contenidoarchivo>{\n  \"extends\": \"../.nuxt/tsconfig.server.json\"\n}\n</contenidoarchivo>",
+            "isBinary": false
+        },
+        {
+            "path": "/Users/vmvv/work/tiendaonline/tsconfig.json",
+            "content": "<contenidoarchivo>{\n  // https://nuxt.com/docs/guide/concepts/typescript\n  \"extends\": \"./.nuxt/tsconfig.json\"\n}\n</contenidoarchivo>",
+            "isBinary": false
+        }
+    ]
+}
