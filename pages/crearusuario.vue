@@ -1,8 +1,7 @@
 <template>
-
   <div class="col-span-4">
-  
-    <form @submit.prevent="crearUsuario" >
+    <form @submit.prevent="crearUsuario">
+      <h3 class="mb-5">Crear una cuenta</h3>
       <div class="mb-5">
         <label for="nombre" class="label">Nombre:</label>
         <input type="text" v-model="nombre" id="nombre" class="shadow-sm input" required>
@@ -27,10 +26,21 @@
         <label for="telefono" class="label">Teléfono:</label>
         <input type="text" v-model="telefono" id="telefono" class="input">
       </div>
-    
-      <button type="submit" class="btn">Crear Usuario</button>
+      <button type="submit" class="btn bg-blue-700
+      
+      ">Crear Usuario</button>
+      <NuxtLink to="/login" class="ml-5 btn bg-blue-700 ">Ingresar</NuxtLink>
+      <div v-if="error" class="error">{{ error }}</div>
+
     </form>
   </div>
+
+<div class="col-span-8">
+  <img src="https://www.mozart.cl/wp-content/uploads/2023/03/00_MIF_3356_Bodegon.jpg" alt="Imagen de una persona con una computadora" class="w-full h-full object-cover">
+</div>
+
+
+
 </template>
 
 <script>
@@ -42,7 +52,8 @@ export default {
       contrasena: '',
       direccion: '',
       telefono: '',
-      rut: ''
+      rut: '',
+      error: ''
     };
   },
   layout: 'default',
@@ -63,36 +74,49 @@ export default {
             rut: this.rut
           })
         });
+        const data = await response.json();
         if (response.ok) {
           alert('Usuario creado exitosamente');
-          // Limpiar el formulario
           this.nombre = '';
           this.email = '';
           this.contrasena = '';
           this.direccion = '';
           this.telefono = '';
           this.rut = '';
+          this.error = '';
         } else {
-          throw new Error('Error al crear el usuario');
+          if (data.error.includes('Correo')) {
+            this.error = 'El email ya está registrado';
+          } else {
+            this.error = 'Otro error';
+          }
         }
       } catch (error) {
-        alert(error.message);
+        this.error = 'Otro error';
       }
     }
   }
 };
 </script>
+
 <style lang="scss" scoped>
 .form {
-  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5;
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5;
 }
+
 .input {
   @extend .form;
 }
+
 .btn {
-  @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm px-5 py-2.5 text-center
+  @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center;
 }
+
 .label {
   @apply block mb-2 text-sm font-medium text-gray-900;
+}
+
+.error {
+  @apply text-red-500 mt-2;
 }
 </style>

@@ -1,6 +1,7 @@
 <template>
     <div class="col-span-4">
       <form @submit.prevent="login">
+        <h3 class="mb-5">Acceder a tu cuenta</h3>
         <div class="mb-5">
           <label for="email" class="label">Email:</label>
           <input type="email" v-model="email" id="email" class="input" required>
@@ -9,10 +10,20 @@
           <label for="contrasena" class="label">Contraseña:</label>
           <input type="password" v-model="contrasena" id="contrasena" class="input" required>
         </div>
-        <button type="submit" class="btn">Iniciar Sesión</button>
+        <button type="submit" class="btn bg-blue-700 p-4">Iniciar Sesión</button>
+
+        <NuxtLink to="/crearusuario" class="ml-5 btn bg-blue-700 ">Registrarse</NuxtLink>
+
         <div v-if="error" class="error">{{ error }}</div>
+    
       </form>
     </div>
+
+    <div class="col-span-8">
+  <img src="https://www.mozart.cl/wp-content/uploads/2023/03/00_MIF_3356_Bodegon.jpg" alt="Imagen de una persona con una computadora" class="w-full h-full object-cover">
+</div>
+
+
   </template>
   
   <script>

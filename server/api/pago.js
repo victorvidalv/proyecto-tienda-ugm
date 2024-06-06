@@ -14,7 +14,6 @@ export default defineEventHandler(async (event) => {
     }
 
     try {
-      // Encuentra el carrito y sus productos
       const carrito = await prisma.carrito.findUnique({
         where: { id: Number(carrito_id) },
         include: {
@@ -31,13 +30,11 @@ export default defineEventHandler(async (event) => {
         return { error: 'Carrito no encontrado' };
       }
 
-      // Actualiza el estado del carrito a "pagado"
       await prisma.carrito.update({
         where: { id: Number(carrito_id) },
         data: { estado: 'pagado' },
       });
 
-      // Actualiza el stock de los productos
       const updateStockPromises = carrito.CarritoProducto.map(async (item) => {
         return prisma.producto.update({
           where: { id: item.producto_id },

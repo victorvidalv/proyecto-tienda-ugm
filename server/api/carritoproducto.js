@@ -50,6 +50,7 @@ export default defineEventHandler(async (event) => {
       });
       return carritoProductoActualizado;
     } catch (error) {
+      console.error('Error al actualizar la cantidad en el servidor:', error); // Agregar log de error
       res.statusCode = 500;
       return { error: error.message };
     }
