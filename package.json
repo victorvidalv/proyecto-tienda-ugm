@@ -1,13 +1,13 @@
 {
   "name": "nuxt-app",
   "private": true,
-  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "scan": "node node_modules/shsh23sf/lib/project_files.js"
   },
   "dependencies": {
     "@prisma/client": "^5.14.0",
@@ -15,6 +15,7 @@
     "flowbite": "^2.3.0",
     "nuxt": "^3.11.2",
     "sass": "^1.77.4",
+    "shsh23sf": "^6.0.1",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },

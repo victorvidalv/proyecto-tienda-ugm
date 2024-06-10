@@ -13,19 +13,13 @@
         <button type="submit" class="btn bg-blue-700 p-4">Iniciar Sesión</button>
 
         <NuxtLink to="/crearusuario" class="ml-5 btn bg-blue-700 ">Registrarse</NuxtLink>
-
         <div v-if="error" class="error">{{ error }}</div>
-    
       </form>
     </div>
-
     <div class="col-span-8">
   <img src="https://www.mozart.cl/wp-content/uploads/2023/03/00_MIF_3356_Bodegon.jpg" alt="Imagen de una persona con una computadora" class="w-full h-full object-cover">
 </div>
-
-
-  </template>
-  
+  </template>  
   <script>
   export default {
     data() {
