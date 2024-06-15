@@ -39,10 +39,7 @@
   <img src="https://www.mozart.cl/wp-content/uploads/2023/03/00_MIF_3356_Bodegon.jpg" alt="Imagen de una persona con una computadora" class="w-full h-full object-cover">
 </div>
 
-
-
 </template>
-
 <script>
 export default {
   data() {
