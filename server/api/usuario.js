@@ -1,37 +1,60 @@
 import { PrismaClient } from '@prisma/client';
-import crypto from 'crypto';
+import bcrypt from 'bcrypt';
+import validator from 'validator';
 
 const prisma = new PrismaClient();
 
 export default defineEventHandler(async (event) => {
   const { req, res } = event;
-
   if (req.method === 'POST') {
     try {
       const body = await readBody(event);
 
-      // Verificar si el correo ya existe
-      const usuarioExistente = await prisma.usuario.findUnique({
-        where: { email: body.email }
-      });
+      // Sanitizar entradas
+      const nombre = validator.trim(body.nombre);
+      const email = validator.trim(body.email);
+      const direccion = validator.trim(body.direccion);
+      const telefono = validator.trim(body.telefono);
+      const rut = validator.trim(body.rut);
 
-      if (usuarioExistente) {
+      // Validar entradas
+      if (!validator.isEmail(email)) {
         res.statusCode = 400;
-        return { error: `Correo ${body.email} existente` };
+        return { error: 'Correo inválido' };
+      }
+      const contrasena = body.contrasena;
+      if (!validator.isLength(contrasena, { min: 8 })) {
+        res.statusCode = 400;
+        return { error: 'La contraseña debe tener al menos 8 caracteres' };
+      }
+      if (!/[A-Z]/.test(contrasena)) {
+        res.statusCode = 400;
+        return { error: 'La contraseña debe tener al menos una letra mayúscula' };
+      }
+      if (!/[!@#$%^&*(),.?\":{}|<>]/.test(contrasena)) {
+        res.statusCode = 400;
+        return { error: 'La contraseña debe tener al menos un carácter especial' };
       }
 
-      // Encriptar la contraseña utilizando MD5
-      const hash = crypto.createHash('md5').update(body.contrasena).digest('hex');
+      // Verificar si el correo ya existe
+      const usuarioExistente = await prisma.usuario.findUnique({ where: { email } });
+      if (usuarioExistente) {
+        res.statusCode = 400;
+        return { error: `Correo ${email} existente` };
+      }
+
+      // Encriptar la contraseña utilizando bcrypt
+      const hash = await bcrypt.hash(contrasena, 10);
 
       const nuevoUsuario = await prisma.usuario.create({
         data: {
-          nombre: body.nombre,
-          email: body.email,
-          contrasena: hash,  // Usar la contraseña encriptada
+          nombre,
+          email,
+          contrasena: hash,
           tipo: 'cliente',
-          direccion: body.direccion,
-          telefono: body.telefono,
-          rut: body.rut,
+          direccion,
+          telefono,
+          rut,
         },
       });
       return nuevoUsuario;

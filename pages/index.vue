@@ -1,6 +1,5 @@
 <template>
 
-
   <div class="col-span-12">
     <section
       class="bg-center bg-no-repeat bg-[url('https://www.mozart.cl/wp-content/uploads/2023/03/MIF_2582.jpg')] bg-gray-700 bg-blend-multiply">
@@ -11,18 +10,13 @@
           Desde siempre.</h1>
         <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
           Descubre la mejor pastelería de modelamiento en Santiago de Chile. ¡Haz tu pedido ahora!
-
         </p>
         <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
 
         </div>
       </div>
     </section>
-
-
   </div>
-
-
   <div v-for="producto in productos" :key="producto.id" class="col-span-3 max-w-sm  border border-gray-200">
     <a href="#">
       <img class="w-full h-64 object-cover" :src="producto.imagen_url" alt="producto" />

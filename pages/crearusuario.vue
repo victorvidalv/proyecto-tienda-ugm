@@ -26,22 +26,23 @@
         <label for="telefono" class="label">Teléfono:</label>
         <input type="text" v-model="telefono" id="telefono" class="input">
       </div>
-      <button type="submit" class="btn bg-blue-700
-      
-      ">Crear Usuario</button>
-      <NuxtLink to="/login" class="ml-5 btn bg-blue-700 ">Ingresar</NuxtLink>
-      <div v-if="error" class="error">{{ error }}</div>
-
+      <button type="submit" class="btn bg-blue-700">Crear Usuario</button>
+      <NuxtLink to="/login" class="ml-5 btn bg-blue-700">Ingresar</NuxtLink>
+      <Notification v-if="notification.message" :message="notification.message" :type="notification.type" />
     </form>
   </div>
-
-<div class="col-span-8">
-  <img src="https://www.mozart.cl/wp-content/uploads/2023/03/00_MIF_3356_Bodegon.jpg" alt="Imagen de una persona con una computadora" class="w-full h-full object-cover">
-</div>
-
+  <div class="col-span-8">
+    <img src="https://www.mozart.cl/wp-content/uploads/2023/03/00_MIF_3356_Bodegon.jpg" alt="Imagen de una persona con una computadora" class="w-full h-full object-cover">
+  </div>
 </template>
+
 <script>
+import Notification from '@/components/Notification.vue';
+
 export default {
+  components: {
+    Notification
+  },
   data() {
     return {
       nombre: '',
@@ -50,7 +51,10 @@ export default {
       direccion: '',
       telefono: '',
       rut: '',
-      error: ''
+      notification: {
+        message: '',
+        type: ''
+      }
     };
   },
   layout: 'default',
@@ -59,9 +63,7 @@ export default {
       try {
         const response = await fetch('/api/usuario', {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             nombre: this.nombre,
             email: this.email,
@@ -73,24 +75,26 @@ export default {
         });
         const data = await response.json();
         if (response.ok) {
-          alert('Usuario creado exitosamente');
+          this.setNotification('Usuario creado exitosamente', 'success');
           this.nombre = '';
           this.email = '';
           this.contrasena = '';
           this.direccion = '';
           this.telefono = '';
           this.rut = '';
-          this.error = '';
         } else {
-          if (data.error.includes('Correo')) {
-            this.error = 'El email ya está registrado';
-          } else {
-            this.error = 'Otro error';
-          }
+          this.setNotification(data.error || 'Error al crear el usuario', 'error');
         }
       } catch (error) {
-        this.error = 'Otro error';
+        this.setNotification('Error al crear el usuario', 'error');
       }
+    },
+    setNotification(message, type) {
+      this.notification.message = message;
+      this.notification.type = type;
+      setTimeout(() => {
+        this.notification.message = '';
+      }, 3000);
     }
   }
 };
@@ -100,20 +104,13 @@ export default {
 .form {
   @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5;
 }
-
 .input {
   @extend .form;
 }
-
 .btn {
   @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center;
 }
-
 .label {
   @apply block mb-2 text-sm font-medium text-gray-900;
-}
-
-.error {
-  @apply text-red-500 mt-2;
 }
 </style>
